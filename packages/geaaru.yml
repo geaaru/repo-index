@@ -1,0 +1,8 @@
+name: "geaaru"
+description: "Geaaru Repository"
+type: "http"
+enable: true
+cached: true
+priority: 1
+urls:
+  - "https://geaaru.keybase.pub/luet-repo"

@@ -1,0 +1,8 @@
+name: "geaaru-repo-index"
+description: "Geaaru Repository Index"
+type: "http"
+enable: true
+cached: true
+priority: 1
+urls:
+- "https://raw.githubusercontent.com/geaaru/repo-index/gh-pages"
