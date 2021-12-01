@@ -13,5 +13,8 @@ packages:
 - category: "repository"
   name: "geaaru-repo-index"
   version: "20211128"
+- category: "repository"
+  name: "rhos-funtoo"
+  version: "20211130"
 
 
