@@ -15,9 +15,9 @@ jobs:
     - uses: actions/checkout@v2
     - run: |
         git fetch --prune --unshallow
+        #curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
     - name: Validate 🔧
       run: |
-        #curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
         sudo wget -O /usr/bin/luet https://github.com/geaaru/luet/releases/download/v0.20.2-geaaru/luet-v0.20.2-geaaru-linux-amd64
         sudo chmod a+x /usr/bin/luet
         make validate
