@@ -1,5 +1,5 @@
 name: "rhos-funtoo"
-description: "RockHopper Funtoo Repository"
+description: "RockHopper OS Funtoo Repository"
 type: "http"
 enable: true
 cached: true
