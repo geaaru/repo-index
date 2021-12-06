@@ -1,0 +1,8 @@
+name: "macaroni-funtoo"
+description: "Macaroni OS Funtoo Repository"
+type: "http"
+enable: true
+cached: true
+priority: 2
+urls:
+  - "https://1556118782.rsc.cdn77.org/mottainai/macaroni-funtoo/"

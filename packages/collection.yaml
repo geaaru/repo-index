@@ -16,5 +16,7 @@ packages:
 - category: "repository"
   name: "rhos-funtoo"
   version: "20211130"
-
+- category: "repository"
+  name: "macaroni-funtoo"
+  version: "20211206"
 
