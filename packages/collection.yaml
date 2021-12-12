@@ -4,21 +4,36 @@ packages:
 - category: "repository"
   name: "geaaru"
   version: "20210702"
+
 - category: "repository"
   name: "geaaru-stable"
   version: "20210702"
+
 - category: "repository"
   name: "mottainai-stable"
   version: "20211128"
+
 - category: "repository"
   name: "geaaru-repo-index"
   version: "20211128"
+
 - category: "repository"
   name: "macaroni-funtoo"
   version: "20211210"
+
 - category: "repository"
   name: "macaroni-distfiles"
   version: "20211206"
+
 - category: "repository"
   name: "macaroni-commons"
   version: "20211210"
+
+- category: "repository"
+  name: "macaroni-commons-dev"
+  version: "20211212"
+
+- category: "repository"
+  name: "macaroni-funtoo-dev"
+  version: "20211212"
+

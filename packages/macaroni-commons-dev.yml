@@ -1,0 +1,8 @@
+name: "macaroni-commons-dev"
+description: "Macaroni OS Commons Develop Repository"
+type: "http"
+enable: true
+cached: true
+priority: 2
+urls:
+  - "https://cdn.macaroni.funtoo.org/mottainai/macaroni-commons-dev/"
