@@ -23,7 +23,7 @@ packages:
 
 - category: "repository"
   name: "macaroni-distfiles"
-  version: "20211206"
+  version: "20220211"
 
 - category: "repository"
   name: "macaroni-commons"
@@ -31,11 +31,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-commons-dev"
-  version: "20211212"
+  version: "20220211"
 
 - category: "repository"
   name: "macaroni-funtoo-dev"
-  version: "20211212"
+  version: "20220211"
 
 - category: "repository"
   name: "macaroni-funtoo-systemd-dev"
