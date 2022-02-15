@@ -1,0 +1,8 @@
+name: "macaroni-funtoo-systemd"
+description: "Macaroni OS Funtooa SystemD Repository"
+type: "http"
+enable: true
+cached: true
+priority: 2
+urls:
+  - "https://cdn.macaroni.funtoo.org/mottainai/macaroni-funtoo-systemd/"

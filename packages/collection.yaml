@@ -40,3 +40,7 @@ packages:
 - category: "repository"
   name: "macaroni-funtoo-systemd-dev"
   version: "20220128"
+
+- category: "repository"
+  name: "macaroni-funtoo-systemd"
+  version: "20220215"
