@@ -44,3 +44,11 @@ packages:
 - category: "repository"
   name: "macaroni-funtoo-systemd"
   version: "20220215"
+
+- category: "repository"
+  name: "macaroni-funtoo-testing"
+  version: "20220313"
+
+- category: "repository"
+  name: "macaroni-commons-testing"
+  version: "20220313"

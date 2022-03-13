@@ -1,0 +1,8 @@
+name: "macaroni-commons-testing"
+description: "Macaroni OS Commons Testing Repository"
+type: "http"
+enable: true
+cached: true
+priority: 2
+urls:
+  - "https://images.macaroni.funtoo.org/macaroni-commons/"
