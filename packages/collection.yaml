@@ -11,7 +11,11 @@ packages:
 
 - category: "repository"
   name: "mottainai-stable"
-  version: "20211128"
+  version: "20220318"
+
+- category: "repository"
+  name: "mottainai-testing"
+  version: "20220318"
 
 - category: "repository"
   name: "geaaru-repo-index"

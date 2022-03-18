@@ -1,0 +1,8 @@
+name: "mottainai-testing"
+description: "Mottainai official Testing Repository"
+type: "http"
+enable: true
+cached: true
+priority: 1
+urls:
+- "https://images.macaroni.funtoo.org/mottainai"
