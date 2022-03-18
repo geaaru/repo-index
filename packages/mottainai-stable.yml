@@ -6,4 +6,5 @@ enable: true
 cached: true
 priority: 1
 urls:
-- "https://raw.githubusercontent.com/MottainaiCI/repo-stable/gh-pages"
+#- "https://raw.githubusercontent.com/MottainaiCI/repo-stable/gh-pages"
+- "https://cdn.macaroni.funtoo.org/mottainai/mottainai"
