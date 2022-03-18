@@ -1,0 +1,25 @@
+name: geaaru-repo-index
+description: Geaaru repository index
+urls:
+- http://localhost:8000
+type: http
+enable: true
+revision: 1
+last_update: "1647604896"
+index: []
+repo_files:
+  compilertree:
+    filename: compilertree.tar.gz
+    compressiontype: gzip
+    checksums:
+      sha256: e5b1986a80acddceac507c6902a84223d1689350576993b31948f7f4ab8a0851
+  meta:
+    filename: repository.meta.yaml.tar.gz
+    compressiontype: gzip
+    checksums:
+      sha256: 88a14a80d21fc982946ee32cb44f3e0a084149c041a75b13ab3bfde6fd320a7a
+  tree:
+    filename: tree.tar.gz
+    compressiontype: gzip
+    checksums:
+      sha256: dd81982fe8fd28732c5fbf391c5173c33305d24c19809e12b2d6fdf3d4b569b7
