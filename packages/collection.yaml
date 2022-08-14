@@ -60,3 +60,7 @@ packages:
 - category: "repository"
   name: "macaroni-funtoo-systemd-testing"
   version: "20220314"
+
+- category: "repository"
+  name: "macaroni-funtoo-next-dev"
+  version: "20220814"
