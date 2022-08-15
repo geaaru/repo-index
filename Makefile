@@ -4,10 +4,10 @@ CI_ARGS?=
 PACKAGES?=
 
 # Abs path only. It gets copied in chroot in pre-seed stages
-export LUET?=/usr/bin/luet
+export LUET?=/usr/bin/luet-build
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/build
-COMPRESSION?=gzip
+COMPRESSION?=zstd
 CLEAN?=false
 export TREE?=$(ROOT_DIR)/packages
 BUILD_ARGS?=-d --image-repository geaaru/rindex-amd64-cache
