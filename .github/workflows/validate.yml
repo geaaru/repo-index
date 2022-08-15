@@ -21,5 +21,5 @@ jobs:
         #sudo wget -O /usr/bin/luet https://github.com/geaaru/luet/releases/download/v0.27.1-geaaru/luet-v0.27.2-geaaru-linux-amd64a
         #sudo chmod a+x /usr/bin/luet
         sudo curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
-        sudo luet i system/luet-build && sudo luet cleanup --purge-repos
+        sudo luet i -y system/luet-build && sudo luet cleanup --purge-repos
         make validate
