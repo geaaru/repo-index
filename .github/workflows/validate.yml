@@ -18,6 +18,7 @@ jobs:
         #curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
     - name: Validate 🔧
       run: |
-        sudo wget -O /usr/bin/luet https://github.com/geaaru/luet/releases/download/v0.21.2-geaaru/luet-v0.21.2-geaaru-linux-amd64
-        sudo chmod a+x /usr/bin/luet
+        #sudo wget -O /usr/bin/luet https://github.com/geaaru/luet/releases/download/v0.27.1-geaaru/luet-v0.27.2-geaaru-linux-amd64a
+        #sudo chmod a+x /usr/bin/luet
+        sudo curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
         make validate
