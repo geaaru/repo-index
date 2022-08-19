@@ -19,7 +19,7 @@ packages:
 
 - category: "repository"
   name: "geaaru-repo-index"
-  version: "20211128"
+  version: "20220819"
 
 - category: "repository"
   name: "macaroni-funtoo"

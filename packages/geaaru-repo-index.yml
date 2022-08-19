@@ -5,4 +5,5 @@ enable: true
 cached: true
 priority: 1
 urls:
-- "https://raw.githubusercontent.com/geaaru/repo-index/gh-pages"
+  - "https://cdn.macaroni.funtoo.org/mottainai/geaaru-repo-index"
+  - "https://raw.githubusercontent.com/geaaru/repo-index/gh-pages"
