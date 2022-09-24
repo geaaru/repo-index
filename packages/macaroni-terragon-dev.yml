@@ -1,0 +1,8 @@
+name: "macaroni-terragon-dev"
+description: "Macaroni OS Funtoo Terragon Dev Repository"
+type: "http"
+enable: true
+cached: true
+priority: 2
+urls:
+  - "https://images.macaroni.funtoo.org/macaroni-terragon-dev/"

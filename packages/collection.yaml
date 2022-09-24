@@ -64,3 +64,15 @@ packages:
 - category: "repository"
   name: "macaroni-funtoo-next-dev"
   version: "20220814"
+
+- category: "repository"
+  name: "macaroni-terragon"
+  version: "20220924"
+
+- category: "repository"
+  name: "macaroni-terragon-testing"
+  version: "20220924"
+
+- category: "repository"
+  name: "macaroni-terragon-dev"
+  version: "20220924"
