@@ -1,5 +1,5 @@
 name: "macaroni-funtoo-systemd-testing"
-description: "Macaroni OS Funtoo SystemD Testing Repository"
+description: "Macaroni OS Funtoo Eagle Testing Repository"
 type: "http"
 enable: true
 cached: true

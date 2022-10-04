@@ -1,5 +1,5 @@
 name: "macaroni-funtoo-systemd"
-description: "Macaroni OS Funtooa SystemD Repository"
+description: "Macaroni OS Funtoo Eagle Repository"
 type: "http"
 enable: true
 cached: true
