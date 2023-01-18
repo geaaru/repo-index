@@ -11,68 +11,68 @@ packages:
 
 - category: "repository"
   name: "mottainai-stable"
-  version: "20220318"
+  version: "20230118"
 
 - category: "repository"
   name: "mottainai-testing"
-  version: "20220318"
+  version: "20230118"
 
 - category: "repository"
   name: "geaaru-repo-index"
-  version: "20220819"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo"
-  version: "20211210"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-distfiles"
-  version: "20220211"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-commons"
-  version: "20211210"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-commons-dev"
-  version: "20220211"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-dev"
-  version: "20220211"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-systemd-dev"
-  version: "20221004"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-systemd"
-  version: "20221004"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-testing"
-  version: "20220313"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-commons-testing"
-  version: "20220313"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-systemd-testing"
-  version: "20221004"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-funtoo-next-dev"
-  version: "20220814"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-terragon"
-  version: "20220924"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-terragon-testing"
-  version: "20220924"
+  version: "20230118"
 
 - category: "repository"
   name: "macaroni-terragon-dev"
-  version: "20220924"
+  version: "20230118"

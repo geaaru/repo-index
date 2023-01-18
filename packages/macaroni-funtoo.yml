@@ -5,4 +5,4 @@ enable: true
 cached: true
 priority: 2
 urls:
-  - "https://cdn.macaroni.funtoo.org/mottainai/macaroni-funtoo/"
+  - "https://cdn.macaronios.org/mottainai/macaroni-funtoo/"

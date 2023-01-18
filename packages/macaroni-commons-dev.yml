@@ -5,4 +5,4 @@ enable: true
 cached: true
 priority: 2
 urls:
-  - "https://images.macaroni.funtoo.org/macaroni-commons-dev/"
+  - "https://images.macaronios.org/macaroni-commons-dev/"
