@@ -1,4 +1,4 @@
-image: "quay.io/mocaccino/micro:master"
+image: "macaronios/funtoo-minimal:latest-amd64"
 package_dir: /repo
 
 steps:
