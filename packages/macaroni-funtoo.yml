@@ -1,8 +1,10 @@
 name: "macaroni-funtoo"
-description: "Macaroni OS Funtoo Repository"
+description: "Macaroni OS Phoenix Repository"
 type: "http"
 enable: true
 cached: true
-priority: 2
+priority: 30
 urls:
-  - "https://cdn.macaronios.org/mottainai/macaroni-funtoo/"
+  - "https://dl.macaronios.org/repos/macaroni-funtoo/"
+  - "https://cdn2.macaronios.org/repos/macaroni-funtoo/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-funtoo/"

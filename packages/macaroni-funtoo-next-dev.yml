@@ -3,6 +3,6 @@ description: "Macaroni OS Funtoo Next Develop Repository"
 type: "http"
 enable: true
 cached: true
-priority: 2
+priority: 10
 urls:
-  - "https://images.macaronios.org/macaroni-funtoo-next-dev/"
+  - "https://dev.macaronios.org/macaroni-funtoo-next-dev/"

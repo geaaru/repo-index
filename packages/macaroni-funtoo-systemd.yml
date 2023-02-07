@@ -3,6 +3,8 @@ description: "Macaroni OS Funtoo Eagle Repository"
 type: "http"
 enable: true
 cached: true
-priority: 2
+priority: 30
 urls:
-  - "https://cdn.macaronios.org/mottainai/macaroni-funtoo-systemd/"
+  - "https://dl.macaronios.org/repos/macaroni-funtoo-systemd/"
+  - "https://cdn2.macaronios.org/repos/macaroni-funtoo-systemd/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-funtoo-systemd/"

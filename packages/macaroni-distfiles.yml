@@ -5,4 +5,6 @@ enable: true
 cached: true
 priority: 2
 urls:
-  - "https://images.macaronios.org/macaroni-distfiles/"
+  - "https://dl.macaronios.org/repos/macaroni-distfiles/"
+  - "https://cdn2.macaronios.org/repos/macaroni-distfiles/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-distfiles/"

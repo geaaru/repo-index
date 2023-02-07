@@ -1,0 +1,8 @@
+name: "mottainai-dev"
+description: "Mottainai Development Repository"
+type: "http"
+enable: true
+cached: true
+priority: 10
+urls:
+  - "https://dev.macaronios.org/mottainai/mottainai-dev/"

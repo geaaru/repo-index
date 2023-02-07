@@ -5,5 +5,8 @@ enable: true
 cached: true
 priority: 1
 urls:
+  - "https://dl.macaronios.org/repos/geaaru-repo-index"
+  - "https://cdn2.macaronios.org/repos/geaaru-repo-index"
+  - "https://macaronios.mirror.garr.it/repos/geaaru-repo-index"
   - "https://cdn.macaronios.org/mottainai/geaaru-repo-index"
   - "https://raw.githubusercontent.com/geaaru/repo-index/gh-pages"
