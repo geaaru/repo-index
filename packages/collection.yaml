@@ -11,7 +11,7 @@ packages:
 
 - category: "repository"
   name: "mottainai-dev"
-  version: "20230207"
+  version: "20230225"
 
 - category: "repository"
   name: "mottainai-stable"

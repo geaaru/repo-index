@@ -5,4 +5,4 @@ enable: true
 cached: true
 priority: 10
 urls:
-  - "https://dev.macaronios.org/mottainai/mottainai-dev/"
+  - "https://dev.macaronios.org/mottainai-dev/"
