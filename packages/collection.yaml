@@ -26,8 +26,12 @@ packages:
   version: "20230207"
 
 - category: "repository"
-  name: "macaroni-funtoo"
-  version: "20230207"
+  name: "macaroni-phoenix"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo"
+      version: "20230411"
 
 - category: "repository"
   name: "macaroni-distfiles"
@@ -42,32 +46,48 @@ packages:
   version: "20230317"
 
 - category: "repository"
-  name: "macaroni-funtoo-dev"
-  version: "20230317"
+  name: "macaroni-phoenix-dev"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo-dev"
+      version: "20230411"
 
 - category: "repository"
-  name: "macaroni-funtoo-systemd-dev"
-  version: "20230317"
+  name: "macaroni-eagle-dev"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo-systemd-dev"
+      version: "20230411"
 
 - category: "repository"
-  name: "macaroni-funtoo-systemd"
-  version: "20230207"
+  name: "macaroni-eagle"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo-systemd"
+      version: "20230411"
 
 - category: "repository"
-  name: "macaroni-funtoo-testing"
-  version: "20230207"
+  name: "macaroni-phoenix-testing"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo-testing"
+      version: "20230411"
 
 - category: "repository"
   name: "macaroni-commons-testing"
   version: "20230207"
 
 - category: "repository"
-  name: "macaroni-funtoo-systemd-testing"
-  version: "20230207"
-
-- category: "repository"
-  name: "macaroni-funtoo-next-dev"
-  version: "20230207"
+  name: "macaroni-eagle-testing"
+  version: "20230411"
+  provides:
+    - category: repository
+      name: "macaroni-funtoo-systemd-testing"
+      version: "20230411"
 
 - category: "repository"
   name: "macaroni-terragon"
