@@ -1,8 +1,0 @@
-name: "macaroni-funtoo-next-dev"
-description: "Macaroni OS Funtoo Next Develop Repository"
-type: "http"
-enable: true
-cached: true
-priority: 10
-urls:
-  - "https://dev.macaronios.org/macaroni-funtoo-next-dev/"
