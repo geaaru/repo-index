@@ -1,4 +1,4 @@
-name: "macaroni-funtoo"
+name: "macaroni-phoenix"
 description: "Macaroni OS Phoenix Repository"
 type: "http"
 enable: true

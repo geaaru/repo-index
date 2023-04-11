@@ -1,5 +1,5 @@
-name: "macaroni-funtoo-testing"
-description: "Macaroni OS Funtoo Testing Repository"
+name: "macaroni-phoenix-testing"
+description: "Macaroni OS Phoenix Testing Repository"
 type: "http"
 enable: true
 cached: true

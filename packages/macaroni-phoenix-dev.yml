@@ -1,5 +1,5 @@
-name: "macaroni-funtoo-dev"
-description: "Macaroni OS Funtoo Develop Repository"
+name: "macaroni-phoenix-dev"
+description: "Macaroni OS Phoenix Develop Repository"
 type: "http"
 enable: true
 cached: true
