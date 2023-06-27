@@ -100,3 +100,15 @@ packages:
 - category: "repository"
   name: "macaroni-terragon-dev"
   version: "20230317"
+
+- category: "repository"
+  name: "macaroni-security"
+  version: "20230627"
+
+- category: "repository"
+  name: "macaroni-security-testing"
+  version: "20230627"
+
+- category: "repository"
+  name: "macaroni-security-dev"
+  version: "20230627"

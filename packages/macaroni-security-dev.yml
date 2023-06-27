@@ -1,0 +1,9 @@
+name: "macaroni-security-dev"
+description: "Macaroni OS Phoenix Security Develop Repository"
+type: "http"
+enable: true
+cached: true
+priority: 10
+urls:
+  - "https://dev.macaronios.org/macaroni-security-dev/"
+  - "https://dev.macaronios.org/macaroni-security-dev/"

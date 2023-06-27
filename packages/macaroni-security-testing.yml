@@ -1,0 +1,10 @@
+name: "macaroni-security-testing"
+description: "Macaroni OS Phoenix Security Testing Repository"
+type: "http"
+enable: true
+cached: true
+priority: 20
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-security-testing/"
+  - "https://cdn2.macaronios.org/repos/macaroni-security-testing/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-security-testing/"

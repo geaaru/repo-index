@@ -1,0 +1,10 @@
+name: "macaroni-security"
+description: "Macaroni OS Phoenix Security Repository"
+type: "http"
+enable: true
+cached: true
+priority: 35
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-security/"
+  - "https://cdn2.macaronios.org/repos/macaroni-security/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-security/"
