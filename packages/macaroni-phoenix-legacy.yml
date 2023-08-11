@@ -1,0 +1,10 @@
+name: "macaroni-phoenix-legacy"
+description: "Macaroni OS Phoenix Legacy Repository"
+type: "http"
+enable: true
+cached: true
+priority: 30
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-phoenix-legacy/"
+  - "https://cdn2.macaronios.org/repos/macaroni-phoenix-legacy/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-phoenix-legacy/"
