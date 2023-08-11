@@ -1,0 +1,10 @@
+name: "macaroni-eagle-legacy"
+description: "Macaroni OS Eagle Legacy Repository"
+type: "http"
+enable: true
+cached: true
+priority: 30
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-eagle-legacy/"
+  - "https://cdn2.macaronios.org/repos/macaroni-eagle-legacy/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-eagle-legacy/"

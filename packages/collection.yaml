@@ -74,6 +74,10 @@ packages:
       version: "20230411"
 
 - category: "repository"
+  name: "macaroni-eagle-legacy"
+  version: "20230811"
+
+- category: "repository"
   name: "macaroni-phoenix-testing"
   version: "20230411"
   provides:
