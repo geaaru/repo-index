@@ -1,0 +1,85 @@
+path: /build/build/macaroni-security-repository-20230627.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/funtoo-minimal:latest-amd64
+  seed: macaronios/funtoo-minimal:latest-amd64
+  package:
+    id: 0
+    name: macaroni-security
+    version: "20230627"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2023-06-27 06:08:58.98699456 +0000 UTC m=+61.638258656
+    labels: {}
+    treedir: /build/packages
+    repository: ""
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: efc3084164886fd0bbf56bdd5d726a6d9465f6d1c722feffd55bfb23137866dc
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/macaroni-security.yml
+package_cacheimage: ""
+runtime:
+  id: 0
+  name: macaroni-security
+  version: "20230627"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""
+  repository: ""

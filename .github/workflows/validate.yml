@@ -1,0 +1,25 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Validate package specs
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        git fetch --prune --unshallow
+        #curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
+    - name: Validate 🔧
+      run: |
+        #sudo wget -O /usr/bin/luet https://github.com/geaaru/luet/releases/download/v0.27.1-geaaru/luet-v0.27.2-geaaru-linux-amd64a
+        #sudo chmod a+x /usr/bin/luet
+        sudo curl https://raw.githubusercontent.com/geaaru/luet/geaaru/contrib/config/get_luet_root.sh | sudo sh
+        sudo luet i -y system/luet-build && sudo luet cleanup --purge-repos
+        make validate

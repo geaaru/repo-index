@@ -1,0 +1,85 @@
+path: /build/build/macaroni-eagle-legacy-repository-20230811.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/funtoo-minimal:latest-amd64
+  seed: macaronios/funtoo-minimal:latest-amd64
+  package:
+    id: 0
+    name: macaroni-eagle-legacy
+    version: "20230811"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2023-08-11 16:14:41.814898676 +0000 UTC m=+38.057528685
+    labels: {}
+    treedir: /build/packages
+    repository: ""
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: 623ffec097d979c64d8ee7dd7ca40490c6735e74670b934265ae3eef99d25fb6
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/macaroni-eagle-legacy.yml
+package_cacheimage: ""
+runtime:
+  id: 0
+  name: macaroni-eagle-legacy
+  version: "20230811"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""
+  repository: ""

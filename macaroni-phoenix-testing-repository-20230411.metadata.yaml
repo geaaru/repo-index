@@ -1,0 +1,123 @@
+path: /build/build/macaroni-phoenix-testing-repository-20230411.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/funtoo-minimal:latest-amd64
+  seed: macaronios/funtoo-minimal:latest-amd64
+  package:
+    id: 0
+    name: macaroni-phoenix-testing
+    version: "20230411"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides:
+    - id: 0
+      name: macaroni-funtoo-testing
+      version: "20230411"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+      treedir: ""
+      repository: ""
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2023-04-11 12:22:30.300090925 +0000 UTC m=+78.045586950
+    labels: {}
+    treedir: /build/packages
+    repository: ""
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: a1a25c339cd71f7754a2e098e4eba2e8a15266e342c4481d27c7f0a18dcaf7bd
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/macaroni-phoenix-testing.yml
+package_cacheimage: ""
+runtime:
+  id: 0
+  name: macaroni-phoenix-testing
+  version: "20230411"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides:
+  - id: 0
+    name: macaroni-funtoo-testing
+    version: "20230411"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: ""
+    labels: {}
+    treedir: ""
+    repository: ""
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""
+  repository: ""

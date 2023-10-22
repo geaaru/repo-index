@@ -1,0 +1,85 @@
+path: /build/build/macaroni-commons-testing-repository-20230207.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/funtoo-minimal:latest-amd64
+  seed: macaronios/funtoo-minimal:latest-amd64
+  package:
+    id: 0
+    name: macaroni-commons-testing
+    version: "20230207"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2023-02-07 14:25:25.059103138 +0000 UTC m=+27.955607366
+    labels: {}
+    treedir: /build/packages
+    repository: ""
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: be98186c8e3a9fb6c600720fc94b7410b7af58419d6af8f2c29f4b75e21cf5c5
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/macaroni-commons-testing.yml
+package_cacheimage: ""
+runtime:
+  id: 0
+  name: macaroni-commons-testing
+  version: "20230207"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""
+  repository: ""
