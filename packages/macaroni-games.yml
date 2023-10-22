@@ -1,0 +1,10 @@
+name: "macaroni-games"
+description: "Macaroni OS Games Repository (Phoenix)"
+type: "http"
+enable: true
+cached: true
+priority: 30
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-games/"
+  - "https://cdn2.macaronios.org/repos/macaroni-games/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-games/"

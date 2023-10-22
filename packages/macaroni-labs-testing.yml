@@ -1,0 +1,10 @@
+name: "macaroni-labs-testing"
+description: "Macaroni OS Labs Testing Repository (Phoenix)"
+type: "http"
+enable: true
+cached: true
+priority: 20
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-labs-testing/"
+  - "https://cdn2.macaronios.org/repos/macaroni-labs-testing/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-labs-testing/"

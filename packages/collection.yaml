@@ -120,3 +120,28 @@ packages:
 - category: "repository"
   name: "macaroni-security-dev"
   version: "20230627"
+
+- category: "repository"
+  name: "macaroni-games"
+  version: "20231022"
+
+- category: "repository"
+  name: "macaroni-games-testing"
+  version: "20231022"
+
+- category: "repository"
+  name: "macaroni-games-dev"
+  version: "20231022"
+
+- category: "repository"
+  name: "macaroni-labs"
+  version: "20231022"
+
+- category: "repository"
+  name: "macaroni-labs-testing"
+  version: "20231022"
+
+- category: "repository"
+  name: "macaroni-labs-dev"
+  version: "20231022"
+

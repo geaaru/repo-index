@@ -1,0 +1,9 @@
+name: "macaroni-labs-dev"
+description: "Macaroni OS Labs Dev Repository (Phoenix)"
+type: "http"
+enable: true
+cached: true
+priority: 10
+urls:
+  - "https://dev.macaronios.org/macaroni-labs-dev/"
+  - "https://dev.macaronios.org/macaroni-labs-dev/"

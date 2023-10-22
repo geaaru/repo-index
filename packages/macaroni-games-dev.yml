@@ -1,0 +1,9 @@
+name: "macaroni-games-dev"
+description: "Macaroni OS Games Dev Repository (Phoenix)"
+type: "http"
+enable: true
+cached: true
+priority: 10
+urls:
+  - "https://dev.macaronios.org/macaroni-games-dev/"
+  - "https://dev.macaronios.org/macaroni-games-dev/"

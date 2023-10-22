@@ -1,0 +1,10 @@
+name: "macaroni-games-testing"
+description: "Macaroni OS Games Testing Repository (Phoenix)"
+type: "http"
+enable: true
+cached: true
+priority: 20
+urls:
+  - "https://dl.macaronios.org/repos/macaroni-games-testing/"
+  - "https://cdn2.macaronios.org/repos/macaroni-games-testing/"
+  - "https://macaronios.mirror.garr.it/repos/macaroni-games-testing/"
