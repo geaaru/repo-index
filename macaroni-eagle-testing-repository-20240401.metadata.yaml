@@ -1,0 +1,63 @@
+path: /build/build/macaroni-eagle-testing-repository-20240401.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/funtoo-minimal:latest-amd64
+  seed: macaronios/funtoo-minimal:latest-amd64
+  package:
+    name: macaroni-eagle-testing
+    version: "20240401"
+    category: repository
+    provides:
+    - name: macaroni-funtoo-systemd-testing
+      version: "20240401"
+      category: repository
+    buildtimestamp: 2024-04-01 07:44:07.790361224 +0000 UTC m=+63.863158968
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: 5f6c486d146322b0a32e0ed3685898631ea4aa4dcb554ec2bb2985ae6adbc6a9
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/macaroni-eagle-testing.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-eagle-testing
+  version: "20240401"
+  category: repository
+  provides:
+  - name: macaroni-funtoo-systemd-testing
+    version: "20240401"
+    category: repository
