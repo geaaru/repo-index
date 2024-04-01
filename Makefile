@@ -1,4 +1,4 @@
-BACKEND?=dockerv2
+BACKEND?=dockerv3
 CONCURRENCY?=1
 CI_ARGS?=
 PACKAGES?=
@@ -10,8 +10,13 @@ DESTINATION?=$(ROOT_DIR)/build
 COMPRESSION?=zstd
 CLEAN?=false
 export TREE?=$(ROOT_DIR)/packages
-BUILD_ARGS?=-d --image-repository geaaru/rindex-amd64-cache
+BUILD_ARGS?=--no-spinner --image-repository geaaru/rindex-amd64-cache
+GENIDX_ARGS?=--only-upper-level --compress=false
 CONFIG?= --config conf/luet.yaml
+REPO_NAME?=geaaru-index
+REPO_DESC?="Macaroni OS Repositories"
+REPO_URL?="https://dl.macaronios.org/repos/geaaru-repo-index"
+
 SUDO?=
 VALIDATE_OPTIONS?=-s
 
@@ -25,32 +30,36 @@ clean:
 .PHONY: build
 build: clean
 	mkdir -p $(ROOT_DIR)/build
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE)  $(PACKAGES) --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE)  $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: build-all
 build-all: clean
 	mkdir -p $(ROOT_DIR)/build
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS)  --tree=$(TREE) --full --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS)  --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild
 rebuild:
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) $(PACKAGES) --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild-all
 rebuild-all:
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) --full --destination $(ROOT_DIR)/build --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+
+.PHONY: genidx
+genidx:
+	$(SUDO) $(LUET) tree genidx $(GENIDX_ARGS) --tree=$(TREE)
 
 .PHONY: create-repo
-create-repo:
+create-repo: genidx
 	$(SUDO) $(LUET) create-repo $(CONFIG) --tree "$(TREE)" \
     --output $(DESTINATION) \
     --packages $(DESTINATION) \
-    --name "geaaru-repo-index" \
-    --descr "Geaaru repository index" \
-    --urls "http://localhost:8000" \
+    --name "$(REPO_NAME)" \
+    --descr "$(REPO_DESC)" \
+    --urls "$(REPO_URL)" \
     --tree-compression $(COMPRESSION) \
-    --tree-filename tree.tar \
-    --meta-compression $(COMPRESSION) \
+    --tree-filename tree.tar.zst \
+    --with-compilertree \
     --type http
 
 .PHONY: serve-repo
