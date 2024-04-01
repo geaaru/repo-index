@@ -1,6 +1,10 @@
-# Geaaru Repository index
+<p align="center">
+  <img src="https://github.com/macaroni-os/macaroni-site/blob/master/site/static/images/logo.png">
+</p>
 
-This repository it is automatically built and contains different Luet repositories packages.
+# Macaroni OS Repositories index (AKA Geaaru Repox Index)
+
+This repository it is automatically built and contains different Anise repositories packages.
 
 You can also build this repo locally if you wish:
 ```sh
