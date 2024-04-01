@@ -2,9 +2,10 @@
   <img src="https://github.com/macaroni-os/macaroni-site/blob/master/site/static/images/logo.png">
 </p>
 
-# Macaroni OS Repositories index (AKA Geaaru Repox Index)
+# Macaroni OS Repositories index
 
-This repository it is automatically built and contains different Anise repositories packages.
+This repository (AKA Geaaru Repos Index) contains the list of packages with the
+Anise repositories.
 
 You can also build this repo locally if you wish:
 ```sh
