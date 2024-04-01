@@ -91,11 +91,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-eagle-testing"
-  version: "20230411"
+  version: "20240401"
   provides:
     - category: repository
       name: "macaroni-funtoo-systemd-testing"
-      version: "20230411"
+      version: "20240401"
 
 - category: "repository"
   name: "macaroni-terragon"

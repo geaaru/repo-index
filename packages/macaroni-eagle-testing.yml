@@ -5,6 +5,6 @@ enable: true
 cached: true
 priority: 20
 urls:
-  - "https://dl.macaronios.org/repos/macaroni-funtoo-systemd-esting/"
+  - "https://dl.macaronios.org/repos/macaroni-funtoo-systemd-testing/"
   - "https://cdn2.macaronios.org/repos/macaroni-funtoo-systemd-testing/"
   - "https://macaronios.mirror.garr.it/repos/macaroni-funtoo-systemd-testing/"
