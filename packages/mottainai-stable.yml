@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 30
 urls:
+  - "https://cdn77.macaronios.org/mottainai/"
   - "https://dl.macaronios.org/repos/mottainai/"
   - "https://cdn2.macaronios.org/repos/mottainai/"
   - "https://macaronios.mirror.garr.it/repos/mottainai/"

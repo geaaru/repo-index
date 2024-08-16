@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 20
 urls:
+  - "https://cdn77.macaronios.org/macaroni-commons-testing/"
   - "https://dl.macaronios.org/repos/macaroni-commons-testing/"
   - "https://cdn2.macaronios.org/repos/macaroni-commons-testing/"
   - "https://macaronios.mirror.garr.it/repos/macaroni-commons-testing/"

@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 30
 urls:
+  - "https://cdn77.macaronios.org/macaroni-commons/"
   - "https://dl.macaronios.org/repos/macaroni-commons/"
   - "https://cdn2.macaronios.org/repos/macaroni-commons/"
   - "https://macaronios.mirror.garr.it/repos/macaroni-commons/"
