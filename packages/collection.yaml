@@ -15,23 +15,23 @@ packages:
 
 - category: "repository"
   name: "mottainai-stable"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "mottainai-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "geaaru-repo-index"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-phoenix"
-  version: "20240816"
+  version: "20240821"
   provides:
     - category: repository
       name: "macaroni-funtoo"
-      version: "20240816"
+      version: "20240821"
 
 - category: "repository"
   name: "macaroni-phoenix-legacy"
@@ -39,11 +39,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-distfiles"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-commons"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-commons-dev"
@@ -67,43 +67,43 @@ packages:
 
 - category: "repository"
   name: "macaroni-eagle"
-  version: "20240816"
+  version: "20240821"
   provides:
     - category: repository
       name: "macaroni-funtoo-systemd"
-      version: "20240816"
+      version: "20240821"
 
 - category: "repository"
   name: "macaroni-eagle-legacy"
-  version: "20230811"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-phoenix-testing"
-  version: "20240816"
+  version: "20240821"
   provides:
     - category: repository
       name: "macaroni-funtoo-testing"
-      version: "20240816"
+      version: "20240821"
 
 - category: "repository"
   name: "macaroni-commons-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-eagle-testing"
-  version: "20240816"
+  version: "20240821"
   provides:
     - category: repository
       name: "macaroni-funtoo-systemd-testing"
-      version: "20240816"
+      version: "20240821"
 
 - category: "repository"
   name: "macaroni-terragon"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-terragon-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-terragon-dev"
@@ -111,11 +111,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-security"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-security-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-security-dev"
@@ -123,11 +123,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-games"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-games-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-games-dev"
@@ -139,7 +139,7 @@ packages:
 
 - category: "repository"
   name: "macaroni-labs-testing"
-  version: "20240816"
+  version: "20240821"
 
 - category: "repository"
   name: "macaroni-labs-dev"
