@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 20
 urls:
+  - "https://cdn77-os.macaronios.org/mottainai-testing/"
   - "https://cdn77.macaronios.org/mottainai-testing/"
   - "https://dl.macaronios.org/repos/mottainai-testing/"
   - "https://cdn2.macaronios.org/repos/mottainai-testing/"

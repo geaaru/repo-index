@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 35
 urls:
+  - "https://cdn77-os.macaronios.org/macaroni-security/"
   - "https://cdn77.macaronios.org/macaroni-security/"
   - "https://dl.macaronios.org/repos/macaroni-security/"
   - "https://cdn2.macaronios.org/repos/macaroni-security/"

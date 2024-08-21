@@ -5,6 +5,7 @@ enable: true
 cached: true
 priority: 30
 urls:
+  - "https://cdn77-os.macaronios.org/macaroni-games/"
   - "https://cdn77.macaronios.org/macaroni-games/"
   - "https://dl.macaronios.org/repos/macaroni-games/"
   - "https://cdn2.macaronios.org/repos/macaroni-games/"
