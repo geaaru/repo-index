@@ -1,0 +1,9 @@
+name: "mark-dev"
+description: "Macaroni OS MARK Develop Repository"
+type: "http"
+enable: true
+cached: true
+priority: 10
+urls:
+  - "https://dev.macaronios.org/mark-dev/"
+  - "https://dev.macaronios.org/mark-dev/"

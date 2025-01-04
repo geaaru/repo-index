@@ -145,3 +145,15 @@ packages:
   name: "macaroni-labs-dev"
   version: "20231022"
 
+- category: "repository"
+  name: "mark-dev"
+  version: "20250104"
+
+- category: "repository"
+  name: "mark-testing"
+  version: "20250104"
+
+- category: "repository"
+  name: "mark"
+  version: "20250104"
+

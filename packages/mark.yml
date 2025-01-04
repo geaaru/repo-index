@@ -1,0 +1,12 @@
+name: "mark"
+description: "Macaroni OS MARK Repository"
+type: "http"
+enable: true
+cached: true
+priority: 30
+urls:
+  - "https://cdn77-os.macaronios.org/mark/"
+  - "https://cdn77.macaronios.org/mark/"
+  - "https://dl.macaronios.org/repos/mark/"
+  - "https://cdn2.macaronios.org/repos/mark/"
+  - "https://macaronios.mirror.garr.it/repos/mark/"

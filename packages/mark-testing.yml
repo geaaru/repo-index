@@ -1,0 +1,12 @@
+name: "mark-testing"
+description: "Macaroni OS MARK Testing Repository"
+type: "http"
+enable: true
+cached: true
+priority: 20
+urls:
+  - "https://cdn77-os.macaronios.org/mark-testing/"
+  - "https://cdn77.macaronios.org/mark-testing/"
+  - "https://dl.macaronios.org/repos/mark-testing/"
+  - "https://cdn2.macaronios.org/repos/mark-testing/"
+  - "https://macaronios.mirror.garr.it/repos/mark-testing/"
