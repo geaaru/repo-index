@@ -1,0 +1,55 @@
+path: /build/build/mark-dev-repository-20250104.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: mark-dev
+    version: "20250104"
+    category: repository
+    buildtimestamp: 2025-01-04 18:10:04.045941853 +0000 UTC m=+8.686417664
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: 1c266edef64aeeffa29370329e8d9a544af2043321e3543ed80a08a9567ff239
+compressiontype: zstd
+files:
+- etc/luet/repos.conf.d/mark-dev.yml
+package_cacheimage: ""
+runtime:
+  name: mark-dev
+  version: "20250104"
+  category: repository
