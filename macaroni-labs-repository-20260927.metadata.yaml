@@ -1,0 +1,55 @@
+path: /build/build/macaroni-labs-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: macaroni-labs
+    version: "20260927"
+    category: repository
+    buildtimestamp: 2026-09-27 18:16:43.837561324 +0000 UTC m=+7.651190230
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: b7a052dcc78294db18f0b8771e252b4f4a032ac410bbbb53b2cac23f94b256fb
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/macaroni-labs.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-labs
+  version: "20260927"
+  category: repository

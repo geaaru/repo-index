@@ -1,0 +1,55 @@
+path: /build/build/macaroni-security-dev-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: macaroni-security-dev
+    version: "20260927"
+    category: repository
+    buildtimestamp: 2026-09-27 18:30:21.033970484 +0000 UTC m=+7.751303126
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: 8bdcfe76a622522bc64102ed2eb55884ccf1276ef2584588211a2504583b5e94
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/macaroni-security-dev.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-security-dev
+  version: "20260927"
+  category: repository

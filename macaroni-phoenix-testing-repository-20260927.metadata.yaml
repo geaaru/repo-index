@@ -1,0 +1,63 @@
+path: /build/build/macaroni-phoenix-testing-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: macaroni-phoenix-testing
+    version: "20260927"
+    category: repository
+    provides:
+    - name: macaroni-funtoo-testing
+      version: "20260927"
+      category: repository
+    buildtimestamp: 2026-09-27 18:11:37.620433725 +0000 UTC m=+7.834018199
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: ed9725d8098a3794692270ae72c576f9b28a76c9a87641c3354b3ca7367c078e
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/macaroni-phoenix-testing.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-phoenix-testing
+  version: "20260927"
+  category: repository
+  provides:
+  - name: macaroni-funtoo-testing
+    version: "20260927"
+    category: repository

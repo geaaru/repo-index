@@ -1,0 +1,63 @@
+path: /build/build/macaroni-eagle-testing-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: macaroni-eagle-testing
+    version: "20260927"
+    category: repository
+    provides:
+    - name: macaroni-funtoo-systemd-testing
+      version: "20260927"
+      category: repository
+    buildtimestamp: 2026-09-27 18:24:23.307651502 +0000 UTC m=+7.618972586
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: ef9108597a447809ff515b3a5ca7a3a56b9abd7e4bb95d2f250e72deed43b333
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/macaroni-eagle-testing.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-eagle-testing
+  version: "20260927"
+  category: repository
+  provides:
+  - name: macaroni-funtoo-systemd-testing
+    version: "20260927"
+    category: repository

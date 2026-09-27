@@ -1,0 +1,55 @@
+path: /build/build/mottainai-stable-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: mottainai-stable
+    version: "20260927"
+    category: repository
+    buildtimestamp: 2026-09-27 18:14:10.984148608 +0000 UTC m=+8.227997275
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: 70b087c6d667f69dd39a1cbfcae96c7350a0b4aa135ff1bafc354ec7493de04c
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/mottainai-stable.yml
+package_cacheimage: ""
+runtime:
+  name: mottainai-stable
+  version: "20260927"
+  category: repository

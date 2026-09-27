@@ -1,0 +1,55 @@
+path: /build/build/macaroni-games-repository-20260927.package.tar.zst
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/anise/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/
+  env: []
+  prelude: []
+  image: macaronios/terragon-minimal:latest-amd64
+  seed: macaronios/terragon-minimal:latest-amd64
+  package:
+    name: macaroni-games
+    version: "20260927"
+    category: repository
+    buildtimestamp: 2026-09-27 18:25:14.879800944 +0000 UTC m=+7.948304644
+    treedir: /build/packages
+  package_dir: /repo
+  retrieve: []
+  unpack: false
+  includes: []
+  excludes: []
+  build_options:
+    pushimagerepository: luet/cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: aa174d6fc683e8c2126174a202cb3f95dbcb5e1a2cb9faefccc800499e860a5c
+compressiontype: zstd
+files:
+- etc/anise/repos.conf.d/macaroni-games.yml
+package_cacheimage: ""
+runtime:
+  name: macaroni-games
+  version: "20260927"
+  category: repository
