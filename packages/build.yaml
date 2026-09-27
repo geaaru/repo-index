@@ -3,5 +3,5 @@ package_dir: /repo
 
 steps:
 - |
-   mkdir -p /repo/etc/luet/repos.conf.d/ && \
-   mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+   mkdir -p /repo/etc/anise/repos.conf.d/ && \
+   mv ${PACKAGE_NAME}.yml /repo/etc/anise/repos.conf.d/

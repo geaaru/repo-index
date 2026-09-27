@@ -4,15 +4,15 @@ CI_ARGS?=
 PACKAGES?=
 
 # Abs path only. It gets copied in chroot in pre-seed stages
-export LUET?=/usr/bin/luet-build
+export ANISE?=/usr/bin/anise-build
 export ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 DESTINATION?=$(ROOT_DIR)/build
 COMPRESSION?=zstd
 CLEAN?=false
 export TREE?=$(ROOT_DIR)/packages
-BUILD_ARGS?=--no-spinner --image-repository geaaru/rindex-amd64-cache
+BUILD_ARGS?=--no-spinner --image-repository macaronios/rindex-amd64-cache
 GENIDX_ARGS?=--only-upper-level --compress=false
-CONFIG?= --config conf/luet.yaml
+CONFIG?= --config conf/anise.yaml
 REPO_NAME?=geaaru-index
 REPO_DESC?="Macaroni OS Repositories"
 REPO_URL?="https://dl.macaronios.org/repos/geaaru-repo-index"
@@ -30,28 +30,28 @@ clean:
 .PHONY: build
 build: clean
 	mkdir -p $(ROOT_DIR)/build
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE)  $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE)  $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: build-all
 build-all: clean
 	mkdir -p $(ROOT_DIR)/build
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS)  --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS)  --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild
 rebuild:
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild-all
 rebuild-all:
-	$(SUDO) $(LUET) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
+	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: genidx
 genidx:
-	$(SUDO) $(LUET) tree genidx $(GENIDX_ARGS) --tree=$(TREE)
+	$(SUDO) $(ANISE) tree genidx $(GENIDX_ARGS) --tree=$(TREE)
 
 .PHONY: create-repo
 create-repo: genidx
-	$(SUDO) $(LUET) create-repo $(CONFIG) --tree "$(TREE)" \
+	$(SUDO) $(ANISE) create-repo $(CONFIG) --tree "$(TREE)" \
     --output $(DESTINATION) \
     --packages $(DESTINATION) \
     --name "$(REPO_NAME)" \
@@ -64,7 +64,7 @@ create-repo: genidx
 
 .PHONY: serve-repo
 serve-repo:
-	LUET_NOLOCK=true $(LUET) serve-repo --port 8000 --dir $(ROOT_DIR)/build
+	ANISE_NOLOCK=true $(ANISE) serve-repo --port 8000 --dir $(ROOT_DIR)/build
 
 validate:
-	$(LUET) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
+	$(ANISE) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
