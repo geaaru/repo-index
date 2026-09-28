@@ -66,5 +66,5 @@ create-repo: genidx
 serve-repo:
 	ANISE_NOLOCK=true $(ANISE) serve-repo --port 8000 --dir $(ROOT_DIR)/build
 
-validate:
+validate: genidx
 	$(ANISE) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
