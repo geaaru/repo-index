@@ -13,7 +13,7 @@ export TREE?=$(ROOT_DIR)/packages
 BUILD_ARGS?=--no-spinner --image-repository macaronios/rindex-amd64-cache
 GENIDX_ARGS?=--only-upper-level --compress=false
 CONFIG?= --config conf/anise.yaml
-REPO_NAME?=geaaru-index
+REPO_NAME?=macaroni-repo-index
 REPO_DESC?="Macaroni OS Repositories"
 REPO_URL?="https://dl.macaronios.org/repos/geaaru-repo-index"
 
@@ -28,21 +28,21 @@ clean:
 	$(SUDO) rm -rf build/ *.tar *.metadata.yaml
 
 .PHONY: build
-build: clean
+build: clean genidx
 	mkdir -p $(ROOT_DIR)/build
 	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE)  $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: build-all
-build-all: clean
+build-all: clean genidx
 	mkdir -p $(ROOT_DIR)/build
 	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS)  --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild
-rebuild:
+rebuild: genidx
 	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) $(PACKAGES) --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: rebuild-all
-rebuild-all:
+rebuild-all: genidx
 	$(SUDO) $(ANISE) build $(CONFIG) $(BUILD_ARGS) --tree=$(TREE) --full --destination $(DESTINATION) --backend $(BACKEND) --concurrency $(CONCURRENCY) --compression $(COMPRESSION)
 
 .PHONY: genidx
