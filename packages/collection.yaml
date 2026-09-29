@@ -23,11 +23,11 @@ packages:
 
 - category: "repository"
   name: "macaroni-repo-index"
-  version: "20260927"
+  version: "20260929"
   provides:
     - category: repository
       name: geaaru-repo-index
-      version: "20260927"
+      version: "20260929"
 
 - category: "repository"
   name: "macaroni-phoenix"
